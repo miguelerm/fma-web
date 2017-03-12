@@ -12,6 +12,12 @@ namespace FmaWeb
                 Path = "~/Scripts/jquery-3.1.1.min.js",
                 DebugPath = "~/Scripts/jquery-3.1.1.js"
             });
+            ScriptManager.ScriptResourceMapping.AddDefinition("bootstrap", new ScriptResourceDefinition
+            {
+                Path = "~/Scripts/bootstrap.min.js",
+                DebugPath = "~/Scripts/bootstrap.js"
+            });
+
         }
     }
 }
