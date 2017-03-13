@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FmaWeb {
+namespace Fma.Web {
     
     
     public partial class Login {

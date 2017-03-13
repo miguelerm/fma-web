@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace FmaWeb
+namespace Fma.Web
 {
     public partial class AppLayout : System.Web.UI.MasterPage
     {

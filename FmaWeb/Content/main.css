@@ -111,3 +111,12 @@ body {
         display: inline-block;
         border-radius: 50%;
     }
+
+
+@media (min-width: 768px) {
+    .fixed-caption-text {
+        height: 100px;
+        overflow: hidden;
+        display: block;
+    }
+}
