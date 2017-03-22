@@ -1,15 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using Fma.Web.Servicios;
+using System;
 using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace Fma.Web
 {
-    public partial class Login : System.Web.UI.Page
+    public partial class Login : Page
     {
+        private readonly UsuarioServicio usuarios = new UsuarioServicio();
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (User.Identity.IsAuthenticated)
@@ -22,7 +22,7 @@ namespace Fma.Web
 
         protected void LoginControl_Authenticate(object sender, AuthenticateEventArgs e)
         {
-            e.Authenticated = LoginControl.UserName == LoginControl.Password;
+            e.Authenticated = usuarios.Autenticar(LoginControl.UserName, LoginControl.Password);
         }
     }
 }

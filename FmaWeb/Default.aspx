@@ -9,7 +9,7 @@
     <div class="row">
         <div class="col-sm-6 col-md-4">
             <div class="thumbnail">
-                <asp:HyperLink runat="server" NavigateUrl="~/Default.aspx">
+                <asp:HyperLink runat="server" NavigateUrl="~/Proyectos/Aexcid/Registro.aspx">
                     <asp:Image runat="server" ImageUrl="~/Content/Logos/aexcid.png" Height="80px" />
                 </asp:HyperLink>
                 <div class="caption">
